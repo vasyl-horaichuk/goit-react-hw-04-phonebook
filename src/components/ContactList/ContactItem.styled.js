@@ -43,7 +43,7 @@ export const UserContactItem = styled.li`
   }
 `;
 
-export const UserContactList = styled.li`
+export const UserContactList = styled.ul`
   display: flex;
   gap: 8px;
   flex-direction: column;

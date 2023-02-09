@@ -4,11 +4,11 @@ import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
 import { Title } from './Title/Title';
 import { nanoid } from 'nanoid';
-// import inicialContacts from '../components/user.contacts.json';
+import inicialContacts from '../components/user.contacts.json';
 
 export const App = () => {
   const [contacts, setContacts] = useState(
-    JSON.parse(localStorage.getItem('contacts')) ?? []
+    JSON.parse(localStorage.getItem('contacts')) ?? inicialContacts
   );
   const [filter, setFilter] = useState('');
 
