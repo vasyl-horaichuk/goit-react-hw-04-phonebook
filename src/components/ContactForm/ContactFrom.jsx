@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Form, FormLabel, FormInput, FormButton } from './ContactForm.styled';
 
 export const ContactForm = ({ onSubmit }) => {
@@ -56,4 +57,10 @@ export const ContactForm = ({ onSubmit }) => {
       <FormButton type="submit">Add contacts</FormButton>
     </Form>
   );
+};
+
+ContactForm.prototypes = {
+  name: PropTypes.string,
+  number: PropTypes.number,
+  onSubmit: PropTypes.func,
 };
